@@ -1,0 +1,15 @@
+current directory: /home/webmaser/leggUP/vendor/cache/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+/home/webmaser/.rvm/rubies/ruby-2.6.1/bin/ruby -I /home/webmaser/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0 -r ./siteconf20190227-23385-5wln4s.rb extconf.rb
+creating Makefile
+
+current directory: /home/webmaser/leggUP/vendor/cache/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/webmaser/leggUP/vendor/cache/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/webmaser/leggUP/vendor/cache/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20190227-23385-lmmxk2/bindex

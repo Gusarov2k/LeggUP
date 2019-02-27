@@ -1,19 +1,20 @@
 # README
+{<img src="https://travis-ci.org/Gusarov2k/LeggUP.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/Gusarov2k/LeggUP]
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.6.1
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database creation rake db:create
 
-* Database initialization
+* Database initialization rake db:migrate
 
 * How to run the test suite
 

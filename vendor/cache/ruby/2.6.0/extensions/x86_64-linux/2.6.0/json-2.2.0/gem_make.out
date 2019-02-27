@@ -1,0 +1,13 @@
+current directory: /home/webmaser/leggUP/vendor/cache/ruby/2.6.0/gems/json-2.2.0/ext/json
+/home/webmaser/.rvm/rubies/ruby-2.6.1/bin/ruby -I /home/webmaser/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0 -r ./siteconf20190227-23385-xuikl8.rb extconf.rb
+creating Makefile
+
+current directory: /home/webmaser/leggUP/vendor/cache/ruby/2.6.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/webmaser/leggUP/vendor/cache/ruby/2.6.0/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Цель «all» не требует выполнения команд.
+
+current directory: /home/webmaser/leggUP/vendor/cache/ruby/2.6.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" install

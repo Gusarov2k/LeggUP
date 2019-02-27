@@ -1,0 +1,26 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">title</th>
+        <th scope="col">edit</th>
+        <th scope="col">home</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><%= @problem.title %></td>
+          <td><%= link_to 'Edit', edit_problem_path(@problem) %></td>
+          <td><%= link_to 'Back', problems_path %></td>
+        </tr>
+    </tbody>
+  </table>
+  <% @problem.steps.each do |step| %>
+    <p><%= step.decision %></p>
+    <%= link_to 'Destroy Comment', [step.problem, step],
+                                   method: :delete,
+                                   data: { confirm: 'Are you sure?' },
+                                   remote: true %>
+  <% end %>
+  <%= render 'steps/form' %>
+</div>
