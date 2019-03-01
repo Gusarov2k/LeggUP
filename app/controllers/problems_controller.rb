@@ -1,5 +1,5 @@
 class ProblemsController < ApplicationController
-  before_action :find_problem_id, only: %i[show edit update destroy word_comparison]
+  before_action :find_problem_id, only: %i[show edit update destroy]
 
   def index
     @problems = Problem.all
@@ -19,7 +19,7 @@ class ProblemsController < ApplicationController
     if @problem.save
       redirect_to problem_path(@problem)
     else
-      render :show
+      render :new
     end
   end
 
@@ -43,6 +43,6 @@ class ProblemsController < ApplicationController
   end
 
   def problem_params
-    params.require(:problem).permit(:title, step: [:decision])
+    params.require(:problem).permit(:title)
   end
 end

@@ -3,6 +3,11 @@ SimpleCov.start
 require 'capybara/rspec'
 require 'rails_helper'
 
+SimpleCov.start do
+  add_filter '/vendor/'
+  add_group 'Controllers', 'app/controllers'
+end
+
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
