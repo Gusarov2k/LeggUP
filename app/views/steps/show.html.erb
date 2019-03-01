@@ -1,0 +1,18 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">decision</th>
+        <th scope="col">edit</th>
+        <th scope="col">home</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><%= @step.decision %></td>
+          <td><%= link_to 'Edit', edit_step_path %></td>
+          <td><%= link_to 'Back', steps_path %></td>
+        </tr>
+    </tbody>
+  </table>
+</div>

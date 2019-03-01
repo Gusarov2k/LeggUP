@@ -1,0 +1,5 @@
+<%= simple_form_for([ @problem, @problem.steps.build ], html: { class: 'form-group' }) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :decision, label: 'decision' %>
+  <%= f.button :submit, "Create", class: "btn-primary" %>
+<% end %>

@@ -1,8 +1,14 @@
 require: rubocop-rspec
+
+# inherit_mode:
+#   merge:
+#     Exclude:
+
 AllCops:
   Exclude:
-    - 'db/schema.rb'
-    - 'bin/*'
+    - vendor/bundle/**/*
+    - db/schema.rb
+    - bin/*
   RSpec:
     Patterns:
     - '_test.rb$'
@@ -32,6 +38,9 @@ Metrics/MethodLength:
   Max: 25
 #################### Style ###############################
 
+Layout/ClosingParenthesisIndentation:
+  Enabled: false
+
 
 Style/StringLiterals:
   Description: 'Checks if uses of quotes match the configured preference.'
@@ -46,7 +55,7 @@ Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
   Enabled: false
 
-Style/FrozenStringLiteralComment:
+Style/TrailingCommaInHashLiteral:
   Description: >-
                  Add the frozen_string_literal comment to the top of files
                  to help transition from Ruby 2.3.0 to Ruby 3.0.
@@ -68,5 +77,14 @@ Style/ClassAndModuleChildren:
 
 RSpec/ExampleLength:
   Max: 19
+
+Style/Encoding:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: 'comma'
 
 
